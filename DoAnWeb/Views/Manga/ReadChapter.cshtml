@@ -1,0 +1,11 @@
+﻿<!-- Views/Manga/ReadChapter.cshtml -->
+@model List<string>
+
+<div class="container">
+    <div class="reader">
+        @foreach (var imageUrl in Model)
+        {
+            <img src="@imageUrl" class="manga-page" alt="Manga page">
+        }
+    </div>
+</div>
